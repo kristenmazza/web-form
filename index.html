@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+        >
+          <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M128 64c0-17.7 14.3-32 32-32H320c17.7 0 32 14.3 32 32V416h96V256c0-17.7 14.3-32 32-32H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H512V448c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V96H192V256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V64z"
+          />
+        </svg>
+        <h1>waveformia</h1>
+      </div>
+      <form action="#" method="post">
+        <div class="row">
+          <div class="input-group">
+            <label for="fn">First Name</label>
+            <input type="text" id="fn" name="fn" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="input-group">
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln" name="ln" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="input-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="pw" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="c-pw">Confirm Password</label>
+            <input type="password" id="c-pw" name="c-pw" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="row">
+          <input class="submit" type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 50, 60);
+}
+
+.container {
+    min-height: 50%;
+    min-width: 40%;
+    background-color: rgb(50, 60, 72);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+    fill: rgb(250, 250, 250);
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.form-title {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 10px;
+    flex-basis: 170px;
+}
+
+label {
+    color: rgb(205, 205, 205);
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1.5px solid rgb(63, 74, 88);
+    background-color: rgb(59, 70, 84);
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(250, 250, 250);
+    font-family: inherit;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+    border: 1.5px solid rgb(92, 105, 122);
+    outline: none;
+}
+
+.submit {
+    background-color: rgb(1, 162, 178);
+    flex: 1;
+    color: rgb(250, 250, 250);
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color:rgb(2, 144, 157);
+}
+
+input.invalid {
+    border-color: #900;
+}
+
+input:focus.invalid {
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: rgb(250, 250, 250);
+    background-color: rgb(224, 68, 68);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
