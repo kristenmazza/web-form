@@ -31,7 +31,7 @@ body {
     padding-bottom: 30px;
 }
 
-.icon {
+.logo-icon {
     width: 20px;
     height: auto;
     fill: rgb(250, 250, 250);
@@ -109,20 +109,12 @@ input[type='password']:focus {
     background-color:rgb(2, 144, 157);
 }
 
-input.invalid {
-    border-color: #900;
-}
-
-input:focus.invalid {
-    outline: none;
-}
-
 .error {
     width: 100%;
     padding: 0;
     font-size: 80%;
     color: rgb(250, 250, 250);
-    background-color: rgb(224, 68, 68);
+    background-color: rgb(160, 34, 34);
     border-radius: 3px;
     box-sizing: border-box;
 }
@@ -130,3 +122,36 @@ input:focus.invalid {
 .error.active {
     padding: 0.3em;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+}
+
+svg#definition {
+    display: none;
+}
+
+.label-group {
+    display: flex;
+    gap: 5px;
+}
+
+.icon {
+    width: 0.5em;
+    height: 0.5em;
+    fill: rgb(224, 68, 68);
+}
+
+.high-five {
+    display: none;
+    color: rgb(205, 205, 205);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+

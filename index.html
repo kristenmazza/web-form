@@ -12,7 +12,7 @@
     <div class="container">
       <div class="logo-container">
         <svg
-          class="icon"
+          class="logo-icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
         >
@@ -23,54 +23,117 @@
         </svg>
         <h1>waveformia</h1>
       </div>
-      <form action="#" method="post">
+      <svg id="definition" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <symbol id="required" viewbox="0 0 128 128">
+            <g>
+              <path
+                d="M110.1,16.4L75.8,56.8l0.3,1l50.6-10.2v32.2l-50.9-8.9l-0.3,1l34.7,39.1l-28.3,16.5L63.7,78.2L63,78.5   l-18.5,49L17.2,111l34.1-39.8v-0.6l-50,9.2V47.6l49.3,9.9l0.3-0.6L17.2,16.7L45.5,0.5l17.8,48.7H64L82.1,0.5L110.1,16.4z"
+              ></path>
+            </g>
+          </symbol>
+        </defs>
+      </svg>
+      <form action="#" method="get" novalidate>
         <div class="row">
           <div class="input-group">
-            <label for="fn">First Name</label>
-            <input type="text" id="fn" name="fn" />
+            <div class="label-group">
+              <label for="fn">First Name</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="text" id="fn" name="fn" required />
             <span class="error" aria-live="polite"></span>
           </div>
           <div class="input-group">
-            <label for="ln">Last Name</label>
-            <input type="text" id="ln" name="ln" />
+            <div class="label-group">
+              <label for="ln">Last Name</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="text" id="ln" name="ln" required />
             <span class="error" aria-live="polite"></span>
           </div>
         </div>
+
         <div class="row">
           <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <div class="label-group">
+              <label for="email">Email</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="email" id="email" name="email" required />
             <span class="error" aria-live="polite"></span>
           </div>
         </div>
+
         <div class="row">
           <div class="input-group">
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country" />
+            <div class="label-group">
+              <label for="country">Country</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="text" id="country" name="country" required />
             <span class="error" aria-live="polite"></span>
           </div>
+
           <div class="input-group">
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="zip" />
+            <div class="label-group">
+              <label for="zip">Zip Code</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="text" id="zip" name="zip" required />
             <span class="error" aria-live="polite"></span>
           </div>
         </div>
+
         <div class="row">
           <div class="input-group">
-            <label for="pw">Password</label>
-            <input type="password" id="pw" name="pw" />
+            <div class="label-group">
+              <label for="pw">Password</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="password" id="pw" name="pw" required />
             <span class="error" aria-live="polite"></span>
           </div>
         </div>
+
         <div class="row">
           <div class="input-group">
-            <label for="c-pw">Confirm Password</label>
-            <input type="password" id="c-pw" name="c-pw" />
+            <div class="label-group">
+              <label for="c-pw">Confirm Password</label>
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="visually-hidden">required</div>
+            </div>
+            <input type="password" id="pw2" name="pw2" required />
             <span class="error" aria-live="polite"></span>
           </div>
         </div>
+
         <div class="row">
           <input class="submit" type="submit" />
+        </div>
+
+        <div class="row">
+          <p class="high-five">High five! All fields are valid!</p>
         </div>
       </form>
     </div>
