@@ -19,7 +19,6 @@ const password2Error = document.querySelector("#pw2 + span.error");
 function showHighFive() {
   const highFive = document.querySelector(".high-five");
   highFive.style.display = "block";
-  console.log(highFive.style.display);
 }
 
 email.addEventListener("input", (e) => {
@@ -132,18 +131,8 @@ form.addEventListener("submit", (e) => {
     showPasswordMatchError();
   }
 
-  if (
-    email.validity.valid &&
-    firstName.validity.valid &&
-    lastName.validity.valid &&
-    country.validity.valid &&
-    zip.validity.valid &&
-    password.validity.valid &&
-    password2.validity.valid &&
-    password2.value === password.value
-  ) {
+  if (form.checkValidity() && password2.value === password.value) {
     showHighFive();
-    console.log("hi");
   }
 });
 
